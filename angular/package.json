@@ -1,0 +1,14 @@
+{
+  "name": "exemplos-angular",
+  "version": "1.0.0",
+  "description": "Exemplos basicos angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wagner Fonseca",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
