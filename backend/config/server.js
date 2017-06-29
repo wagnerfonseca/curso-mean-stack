@@ -16,3 +16,7 @@ server.use(bodyParser.json())
 server.listen(PORT, function() {
     console.log(`BACKEND is running on port ${PORT}.`)
 })
+
+// expondo a variavel server para que outros modulos (arquivos - lembrando que me NodeJs todo arquivo pode ser um modulo)
+// possam exergar
+module.exports = server
