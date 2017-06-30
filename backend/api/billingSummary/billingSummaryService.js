@@ -12,12 +12,12 @@ function getSummary(req, res) {
         },
         {
             $group: { 
-                _id: null,  
+                _id: null,  // realiza o agrupamento retirando id, para somar todos os debitos e creditos
                 credit: { $sum: '$credit' },
                 debt: { $sum: '$debt' }
             }
         },
-        {
+        { // para eliminar a informacao sobre o _id
             $project: {
                 _id: 0,
                 credit: 1,
